@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Input{% endblock %}
+{% block content %}
+<div class="container mt-3">
+    <form action="/", method="POST">
+      <div class="form-group">
+        <label for="text">Enter your text</label>
+        <textarea
+          class="form-control"
+          id="text"
+          rows="3"
+          name="text"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="select">Select Option</label>
+        <select class="form-control" id="options" name="options">
+          <option value="removepunc">Remove Punctuations</option>
+          <option value="cap">Capitalize</option>
+          <option value="upper">Upper Case</option>
+          <option value="lower">Lowercase</option>
+          <option value="spacerem">Extra Space Remove</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+    </form>
+    </div>
+{% endblock %}

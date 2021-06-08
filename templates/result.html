@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<div class="container my-3">
+<div class="form-group">
+    <textarea
+      class="form-control"
+      id="result"
+      rows="3"
+      name="result"
+      readonly
+    >{{output}}</textarea>
+  </div>
+</div>
+{% endblock %}
