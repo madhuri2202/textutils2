@@ -24,6 +24,9 @@ def home():
         elif options == "lower":
             output = text.lower()
             return render_template("result.html", output = output)
+        elif options == "spacerem":
+            output = " ".join(text.split())
+            return render_template("result.html", output = output)
     return render_template('index.html')
 
 
